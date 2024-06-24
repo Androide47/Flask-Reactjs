@@ -35,7 +35,7 @@ This project is a small contact manager application designed to demonstrate the 
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd <repository-folder>
+   cd <repository-folder>/backend
    ```
 2. **Create a virtual environment**:
    ```bash
@@ -55,7 +55,7 @@ This project is a small contact manager application designed to demonstrate the 
 
 1. **Navigate to the frontend directory**:
    ```bash
-   cd frontend
+   cd ../frontend
    ```
 2. **Install the required packages**:
    ```bash
@@ -72,7 +72,7 @@ Once the setup is complete, open your web browser and navigate to `http://localh
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and include appropriate tests.
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and includes appropriate tests.
 
 ## License
 
