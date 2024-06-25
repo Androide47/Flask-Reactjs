@@ -1,10 +1,10 @@
 import React from "react"
 
 const ConstactList = ({ contacts }) => {
-    return <div>
+    return <div className="container-fluid">
             <h2>Contact List</h2>
-           <table>
-               <thead>
+           <table className="table">
+               <thead className="thead-dark">
                    <tr>
                        <th>First Name</th>
                        <th>Last Name</th>
@@ -12,15 +12,15 @@ const ConstactList = ({ contacts }) => {
                        <th>Actions</th>
                    </tr>
                </thead>
-               <tbody>
+               <tbody >
                    {contacts.map((contact) => (
                        <tr key={contact.id}>
                            <td>{contact.firstName}</td>
                            <td>{contact.lastName}</td>
                            <td>{contact.email}</td>
                            <td> 
-                               <button>Edit</button>
-                               <button>Delete</button>
+                               <button className="btn btn-primary mr-2">Edit</button>
+                               <button className="btn btn-danger mr-2">Delete</button>
                            </td>
                        </tr>
                    ))}

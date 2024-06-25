@@ -29,20 +29,20 @@ const ContactForm = ({}) => {
         }
     }
 
-    return <form onSubmit={onSubmit}>
-        <div>
+    return <form className="container" onSubmit={onSubmit}>
+        <div className="form-group mb-3 row">
             <label>Fist Name</label>
             <input type="text" id="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
         </div>
-        <div>
+        <div className="form-group mb-3 row">
             <label>Last Name</label>
             <input type="text" id="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} />
         </div>
-        <div>
+        <div className="form-group mb-3 row">
             <label>Email</label>
             <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
-        <button type="submit">Submit</button>
+        <button className="btn btn-primary" type="submit">Submit</button>
     </form>
 }
 
